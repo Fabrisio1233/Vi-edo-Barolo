@@ -1,164 +1,187 @@
 <html>
- <head>
-    <style>
-.Encabezado{
-    background-color: #681f21;
-    color: aliceblue;
-    text-decoration: none
-}
-.Navegación{
-    color: aliceblue;
-    background-color: #B53544;
-    text-decoration: none
-}
-.Boton{
-  background-color: #a12c3a;
-  color: aliceblue;
-  border-radius: 8%;
-  text-decoration: none;
-}
-.Boton:hover{
-  background-color: #B53544;
-}
-.BotonCirculo{
-  background-color: #a12c3a;
-  color: aliceblue;
-  border-radius: 50%;
-  height: 10vh;
-  width: 10vh;
-  text-decoration: none;
-  font-size: 5%;
-}
-.BotonCirculo:hover{
-  background-color: #B53544;
-}
-    </style>
+<head>
+<style>
+</style>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
  </head>
  <body>
 
-<div class="container-fluid Encabezado">
-  <!--Encabezado-->
- <div class="row align-items-center" style="height: 20vh;">
-  <div class="col-4 text-center h-100 d-flex align-items-center justify-content-center">
-    <a href="Pagina Principal.html" src="Logo.png" class="Navegación "><img src="Logo.png" alt="Logo" class="img-fluid" style="height: 10vh; width: 20vh;"></a>
+<div class="container-fluid">
+   <!--Encabezado-->
+<div class="row text-center d-flex align-items-center justify-content-center Encabezado">
+  <div class="col-4">
+    <a href="index.html" src="Logo.png" class="btn-Principal"><img src="Logo.png" alt="Logo" class="img-fluid w-25"></a>
   </div>
-  <div class="col-3 text-center h-100 d-flex align-items-center justify-content-center">
-    <a href="Nuestro Viñedo.html" class="text-center d-flex align-items-center justify-content-center Boton" style="height: 7vh; width: 20vh;">Nuestro Viñedo</a>
+  <div class="col-3">
+    <a href="Nuestro Vinedo.html" class="btn btn-Principal d-flex align-items-center justify-content-center">Nuestro Viñedo</a>
   </div>
-  <div class="col-3 text-center h-100 d-flex align-items-center justify-content-center">
-    <a href="Nuestra Tienda Vinos.html" class="text-center d-flex align-items-center justify-content-center Boton" style="height: 7vh; width: 20vh;">Nuestra Tienda</a>
+  <div class="col-3">
+    <a href="Nuestra Tienda Vinos.html" class="btn btn-Principal d-flex align-items-center justify-content-center">Nuestra Tienda</a>
   </div>
-  <div class="col-1 text-center h-100 d-flex align-items-center justify-content-center">
-    <a href="Carrito de Compras.html" class="text-center d-flex align-items-center justify-content-center BotonCirculo"><img src="Carrito.png" style="width: 7vh; height: 7vh;"></a>
+  <div class="col-1">
+    <a href="Carrito de Compras.html" class="btn btn-redondo d-flex align-items-center justify-content-center"><img src="Carrito.png" alt="Carrito" class="img-fluid w-70"></a>
   </div>
-  <div class="col-1 text-center h-100 d-flex align-items-center justify-content-center">
-    <a href="Pagina Principal.html" class="text-center d-flex align-items-center justify-content-center BotonCirculo"><img src="Usuario.png" style="width: 7vh; height: 7vh;"></a>
+  <div class="col-1">
+    <button data-bs-toggle="modal" data-bs-target="#Inicio" class="btn btn-redondo d-flex align-items-center justify-content-center"><img src="Usuario.png" alt="Usuario" class="img-fluid w-70"></button>
+    <div class="modal fade" id="Inicio" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content InicioSesion">
+         <div class="modal-header">
+          <h5 class="modal-title">Inicio de Sesión de Usuario</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+           <form id="CrearCuenta" class="d-flex flex-column w-50 gap-2">
+             
+            <label for="Gmail">Su Gmail:</label>
+            <input type="email" id="Gmail" name="Gmail" required> 
+
+            <label for="Contraseña1">Su Contraseña:</label>
+            <input type="password" id="Contraseña1" name="Contraseña1" required> 
+
+            <button type="button" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit">Iniciar Sesión</button>
+            <button data-bs-toggle="modal" data-bs-target="#Cuenta">Crear cuenta</button>
+            
+           </form>
+           <div id="IniciarSesion"></div>
+         </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="Cuenta" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content InicioSesion">
+         <div class="modal-header">
+          <h5 class="modal-title">Crear de Cuenta de Usuario</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+           <form id="CrearCuenta" class="d-flex flex-column w-50 gap-2">
+            <label for="Nombre">Su Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" required> 
+
+            <label for="Apellido">Su Apellido:</label>
+            <input type="text" id="Apellido" name="Apellido" required> 
+             
+            <label for="Gmail">Su Gmail:</label>
+            <input type="email" id="Gmail" name="Gmail" required> 
+
+            <label for="Nacimiento">Su Fecha de Nacimiento:</label>
+            <input type="date" id="Nacimiento" name="Nacimiento" required> 
+
+            <label for="Contraseña1">Su Contraseña:</label>
+            <input type="password" id="Contraseña1" name="Contraseña1" required> 
+
+            <label for="Contraseña2">Repita Su Contraseña:</label>
+            <input type="password" id="Contraseña2" name="Contraseña2" required>
+
+            <button type="submit">Crear cuenta</button>
+            
+           </form>
+           <div id="Comprobante"></div>
+         </div>
+        </div>
+      </div>
+    </div>
   </div>
  </div>
  <!--Divisor-->
-  <div class="row Navegación" style="height: 3vh;" >
+  <div class="row Divisor">
   </div>
 <!--Barra de busqueda-->
-  <div class="row Encabezado" style="height: 10vh;" >
-    <div class="col-12 text-center d-flex align-items-center justify-content-center">
-      <form class="d-flex" role="search" style="height: 5vh; width: 80vh;">
-       <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-       <button class="btn btn-primary" type="submit" style="background-color: #B53544;">Buscar</button>
+ <div class="row Titulos">
+    <div class="col-12 d-flex align-items-center justify-content-center">
+      <form role="search" class="d-flex gap-2">
+       <input class="form-control me-2 BarraBusqueda" type="search" placeholder="Buscar...">
+       <button class="btn btn-search text-center" type="submit">Buscar</button>
       </form>
     </div>
   </div> 
   <!--Divisor-->
-  <div class="row Navegación" style="height: 3vh;" >
+  <div class="row Divisor">
   </div>
   <!--Cambio de Tienda-->
-  <div class="row Encabezado" style="height: 10vh;">
+  <div class="row CambioTienda">
     <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <a href="Nuestra Tienda Vinos.html" class="btn text-center d-flex align-items-center justify-content-center" style="width: 25vh; background-color: #B53544; color: aliceblue;">Nuestros Vinos</a>
+     <a href="Nuestra Tienda Vinos.html" class="btn btn-CambioTienda text-center d-flex align-items-center justify-content-center">Nuestros Vinos</a>
     </div>
     <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <a href="Nuestra Tienda Soportes.html" class="btn text-center d-flex align-items-center justify-content-center" style="width: 25vh; background-color: #B53544; color: aliceblue;">Soporte vinos</a>
+     <a href="Nuestra Tienda Soportes.html" class="btn btn-CambioTienda text-center d-flex align-items-center justify-content-center">Soporte vinos</a>
     </div>
     <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <a href="Nuestra Tienda Vasos.html" class="btn text-center d-flex align-items-center justify-content-center" style="width: 25vh; background-color: #B53544; color: aliceblue;">Vasos</a>
+     <a href="Nuestra Tienda Vasos.html" class="btn btn-CambioTienda text-center d-flex align-items-center justify-content-center">Vasos</a>
     </div>
     <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <a href="Nuestra Tienda Alfajores.html" class="btn text-center d-flex align-items-center justify-content-center" style="width: 25vh; background-color: #B53544; color: aliceblue;">Nuestros Alfajores</a>
+     <a href="Nuestra Tienda Alfajores.html" class="btn btn-CambioTienda text-center d-flex align-items-center justify-content-center">Nuestros Alfajores</a>
     </div>
   </div>
 <!--Divisor-->
-  <div class="row Navegación" style="height: 3vh;" >
+  <div class="row Divisor">
   </div>
 <!--Muestra de productos-->
-<div class="row Encabezado" style="height: 28vh;" >
-  <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <img src="Tienda/Soporte1.jpeg" style="height: 25vh;">
+<div class="row MuestraTienda">
+  <div class="col-3 d-flex align-items-center justify-content-center">
+     <img src="Tienda/Soporte1.jpeg" class="ImagenesTienda">
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <img src="Tienda/Soporte2.jpeg" style="height: 25vh;">
+    <div class="col-3 d-flex align-items-center justify-content-center">
+     <img src="Tienda/Soporte2.jpeg" class="ImagenesTienda">
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-     <img src="Tienda/Soporte3.jpeg" style="height: 25vh;">
+    <div class="col-3 d-flex align-items-center justify-content-center">
+     <img src="Tienda/Soporte3.jpeg" class="ImagenesTienda">
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-      <img src="Tienda/Soporte4.jpeg" style="height: 25vh;">
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <img src="Tienda/Soporte4.jpeg" class="ImagenesTienda">
     </div>
 </div>
 <!--Nombres de los productos-->
-  <div class="row Encabezado" style="height: 5vh;">
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-      <div class="Navegación" style="height: 3vh; width: 22vh; font-size: 2vh;">Nombre del producto</div>
+  <div class="row NombreTienda">
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div class="text-center NombreProductoTienda">Nombre del producto</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-      <div class="Navegación" style="height: 3vh; width: 22vh; font-size: 2vh;">Nombre del producto</div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div class="text-center NombreProductoTienda">Nombre del producto</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-      <div class="Navegación" style="height: 3vh; width: 22vh; font-size: 2vh;">Nombre del producto</div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div class="text-center NombreProductoTienda">Nombre del producto</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-      <div class="Navegación" style="height: 3vh; width: 22vh; font-size: 2vh;">Nombre del producto</div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div class="text-center NombreProductoTienda">Nombre del producto</div>
     </div>
   </div>
   <!--Precio y Añadir a Carrito-->
   <div class="row Encabezado" style="height: 5vh;">
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-       <div class="Navegación me-2" style="height: 3vh; width: 11vh; font-size: 2vh;">Precio</div>
-       <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center" style="height: 3vh; width: 9vh; font-size: 2vh; background-color: #B53544; color: aliceblue;">Añadir</button>
-       <div id="alerta" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #a92f33; color: aliceblue; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-        Ha sido añadido al carrito 🛒
-       </div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+       <div class="PrecioTienda me-2 text-center d-flex align-items-center justify-content-center">Precio</div>
+       <button onclick="mostrarMensaje()" class="btn btn-Tienda text-center d-flex align-items-center justify-content-center">Añadir</button>
+       <div id="alerta" class="AlertaCarrito">Ha sido añadido al carrito 🛒</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-       <div class="Navegación me-2" style="height: 3vh; width: 11vh; font-size: 2vh;">Precio</div>
-       <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center" style="height: 3vh; width: 9vh; font-size: 2vh; background-color: #B53544; color: aliceblue;">Añadir</button>
-       <div id="alerta" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #a92f33; color: aliceblue; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-        Ha sido añadido al carrito 🛒
-       </div>
+   <div class="col-3 d-flex align-items-center justify-content-center">
+       <div class="PrecioTienda me-2 text-center d-flex align-items-center justify-content-center">Precio</div>
+       <button onclick="mostrarMensaje()" class="btn btn-Tienda text-center d-flex align-items-center justify-content-center">Añadir</button>
+       <div id="alerta" class="AlertaCarrito">Ha sido añadido al carrito 🛒</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-       <div class="Navegación me-2" style="height: 3vh; width: 11vh; font-size: 2vh;">Precio</div>
-       <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center" style="height: 3vh; width: 9vh; font-size: 2vh; background-color: #B53544; color: aliceblue;">Añadir</button>
-       <div id="alerta" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #a92f33; color: aliceblue; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-        Ha sido añadido al carrito 🛒
-       </div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+       <div class="PrecioTienda me-2 text-center d-flex align-items-center justify-content-center">Precio</div>
+       <button onclick="mostrarMensaje()" class="btn btn-Tienda text-center d-flex align-items-center justify-content-center">Añadir</button>
+       <div id="alerta" class="AlertaCarrito">Ha sido añadido al carrito 🛒</div>
     </div>
-    <div class="col-3 text-center d-flex align-items-center justify-content-center">
-       <div class="Navegación me-2" style="height: 3vh; width: 11vh; font-size: 2vh;">Precio</div>
-       <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center" style="height: 3vh; width: 9vh; font-size: 2vh; background-color: #B53544; color: aliceblue;">Añadir</button>
-       <div id="alerta" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #a92f33; color: aliceblue; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-        Ha sido añadido al carrito 🛒
-       </div>
+   <div class="col-3 d-flex align-items-center justify-content-center">
+       <div class="PrecioTienda me-2 text-center d-flex align-items-center justify-content-center">Precio</div>
+       <button onclick="mostrarMensaje()" class="btn btn-Tienda text-center d-flex align-items-center justify-content-center">Añadir</button>
+       <div id="alerta" class="AlertaCarrito">Ha sido añadido al carrito 🛒</div>
     </div>
   </div>
   <!--Divisor-->
-  <div class="row Navegación" style="height: 3vh;" >
+  <div class="row Divisor">
   </div>
-  <!--Divisor-->
-  <div class="row Encabezado" style="height: 10vh;" >
-  </div>
+
+
+
+
   </div>
   <script>
         function mostrarMensaje() {
@@ -169,5 +192,7 @@
        }, 2000);
       }
 </script>
+<!-- Bootstrap JS y Popper.js (desde CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  </body>          
 </html>    
