@@ -1,0 +1,19 @@
+{
+  "name": "vinedo-barolo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
