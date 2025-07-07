@@ -1,0 +1,246 @@
+$color-principal: #681f21;
+$color-secundario: #B53544;
+$color-letras: aliceblue;
+$color-carrito: #9b2428;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.Divisor{
+    background-color: $color-secundario;
+    height: 3vh;
+}
+.ColumnaDivisor{ 
+    background-color: #a5303e;
+    height: 65vh; 
+    width: 3vh;
+}
+.Encabezado{
+    background-color: $color-principal;
+    height: 20vh;
+    color: $color-letras;
+}
+.btn-Principal{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 7vh;
+    width: 18vh;
+    border-radius: 0.7vh;
+    text-decoration: none;
+    font-family: Georgia;
+    &:hover{
+        background-color: #c43d4d;
+    }
+}
+.btn-redondo{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 9vh;
+    width: 9vh;
+    border-radius: 50vh;
+    text-decoration: none;
+    &:hover{
+        background-color: #c43d4d;
+    }
+}
+.Presentacion{
+    background-color: $color-principal;
+    color: $color-letras;
+    height: 25vh;
+}
+.Titulos{
+    background-color: $color-principal;
+    color: $color-letras;
+    height: 8vh;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 3.5vh;
+}
+.BienvenidaDescripcion{
+    background-color: $color-principal;
+    color: $color-letras;
+    height: 65vh;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 2.2vh;
+}
+.Carrusel{
+    height: 20vh;
+    width: 120vh;
+}
+.CarruselCelular{
+    height: 20vh;
+    width: 60vh;
+}
+.ImagenFinal{
+    height: 18vh;
+    width: 120vh;
+}
+.ImagenFinalCelular{
+    height: 18vh;
+    width: 70vh;
+}
+.InicioSesion{
+    background-color: $color-principal;
+    color: $color-letras;
+    text-decoration: none;
+    font-family: Georgia;
+}
+.BarraBusqueda{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 4vh;
+    width: 50vh;
+}
+.btn-search{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 4vh;
+    font-size: 1.6vh;
+    &:hover{
+     background-color: #c43d4d;
+    }
+}
+.FondoCarrito{
+    background-color: $color-principal;
+    color: $color-letras;
+    height: 65vh;
+}
+.CuerpoCarrito{
+    width: 140vh;
+}
+.ProductoCarrito{
+    background-color: $color-secundario;
+    width: 70vh; 
+    height: 25vh; 
+    border-radius: 5vh; 
+}
+.ImagenCarrito{
+    width: 15vh;
+    height: 20vh;
+    border-radius: 5vh; 
+}
+.NombreCarrito{
+   background-color: $color-carrito;
+   width: 45vh; 
+   height: 3.5vh; 
+   border-radius: 2vh;
+}
+.PrecioCarrito{
+    background-color: $color-carrito;
+    width: 20vh; 
+    height: 3.5vh; 
+    border-radius: 2vh;
+}
+.btn-Carrito{
+    background-color: $color-principal;
+    color: $color-letras;
+    height: 3vh; 
+    width: 9vh; 
+    font-size: 2vh; 
+    &:hover{
+        background-color: #85292c;
+    }
+}
+.AlertaCarrito{
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #962633; 
+    color: $color-letras; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.btn-Descripcion{
+    background-color: $color-carrito;
+    color: $color-letras;
+    height: 5.5vh;
+    width: 30vh;
+    &:hover{
+        background-color: rgb(156, 38, 42);
+    }
+}
+.Descripcion{
+    background-color: $color-carrito;
+    color: $color-letras;
+    width: 30vh;
+}
+.ImagenesPrecentacion{
+    background-color: $color-principal;
+    height: 45vh;
+}
+.CambioTienda{
+    background-color: $color-principal;
+    height: 10vh;
+}
+.btn-CambioTienda{
+    background-color: $color-secundario;
+    color: $color-letras;
+    width: 25vh;
+    height: 5.5vh;
+    &:hover{
+        background-color: #c43d4d;
+    }
+}
+.MuestraTienda{
+    background-color: $color-principal;
+    height: 28vh;
+}
+.ImagenesTienda{
+    width: 15vh;
+    height: 25vh;
+}
+.NombreTienda{
+    background-color: $color-principal;
+    height: 5vh;
+}
+.NombreProductoTienda{
+    background-color: $color-carrito;
+    color: $color-letras;
+    height: 3vh; 
+    width: 22vh; 
+    font-size: 1.8vh;
+    border-radius: 1.8vh;
+    text-decoration: none;
+    font-family: Georgia;
+}
+.PrecioTienda{
+    background-color: $color-carrito;
+    color: $color-letras;
+    height: 3vh; 
+    width: 11vh;
+    font-size: 1.5vh;
+    border-radius: 1.8vh;
+    text-decoration: none;
+    font-family: Georgia;
+}
+.btn-Tienda{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 3vh; 
+    width: 9vh; 
+    font-size: 1.5vh;
+    border-radius: 1.8vh;
+    text-decoration: none;
+    font-family: Georgia;
+    &:hover{
+        background-color: #c43d4d;
+    }
+}
+.PresentacionCelular{
+    background-color: $color-principal;
+    color: $color-letras;
+    text-decoration: none;
+    font-family: Georgia;
+    height: 20vh;
+    font-size: 2vh;
+}
+.PresentacionCelularImg{
+    height: 15vh;
+    width: 70vh;
+}
+.ImgNuestroViñedo{
+    height: 35vh;
+    width: 20vh;
+}
