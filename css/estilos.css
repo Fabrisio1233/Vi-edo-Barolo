@@ -11859,6 +11859,16 @@ textarea.form-control-lg {
   height: 3vh;
 }
 
+.LogoPrincipal {
+  height: 13vh;
+  width: 18vh;
+}
+
+.LogoPrincipalCelular {
+  height: 10vh;
+  width: 12vh;
+}
+
 .ColumnaDivisor {
   background-color: #a5303e;
   height: 65vh;
@@ -11875,12 +11885,25 @@ textarea.form-control-lg {
   background-color: #B53544;
   color: aliceblue;
   height: 7vh;
-  width: 18vh;
+  width: 17vh;
   border-radius: 0.7vh;
   text-decoration: none;
   font-family: Georgia;
 }
 .btn-Principal:hover {
+  background-color: #c43d4d;
+}
+
+.btn-PrincipalLogo {
+  background-color: #B53544;
+  color: aliceblue;
+  height: 5vh;
+  width: 10vh;
+  border-radius: 0.7vh;
+  text-decoration: none;
+  font-family: Georgia;
+}
+.btn-PrincipalLogo:hover {
   background-color: #c43d4d;
 }
 
@@ -11927,7 +11950,7 @@ textarea.form-control-lg {
 
 .CarruselCelular {
   height: 20vh;
-  width: 60vh;
+  width: 55vh;
 }
 
 .ImagenFinal {
@@ -11981,6 +12004,13 @@ textarea.form-control-lg {
   border-radius: 5vh;
 }
 
+.ProductoCarritoCelular {
+  background-color: #B53544;
+  width: 40vh;
+  height: 25vh;
+  border-radius: 5vh;
+}
+
 .ImagenCarrito {
   width: 15vh;
   height: 20vh;
@@ -11992,6 +12022,17 @@ textarea.form-control-lg {
   width: 45vh;
   height: 3.5vh;
   border-radius: 2vh;
+}
+
+.NombreCarritoCelular {
+  background-color: #9b2428;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: Georgia;
+  width: 20vh;
+  height: 3.5vh;
+  border-radius: 2vh;
+  font-size: 2vh;
 }
 
 .PrecioCarrito {
@@ -12028,7 +12069,7 @@ textarea.form-control-lg {
   background-color: #9b2428;
   color: aliceblue;
   height: 5.5vh;
-  width: 30vh;
+  width: 27vh;
 }
 .btn-Descripcion:hover {
   background-color: rgb(156, 38, 42);
@@ -12128,6 +12169,20 @@ textarea.form-control-lg {
 .ImgNuestroViñedo {
   height: 35vh;
   width: 20vh;
+}
+
+.TituloCelular {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 3vh;
+}
+
+.DescripcionCelular {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 1.6vh;
 }
 
 /*# sourceMappingURL=Estilos.css.map */

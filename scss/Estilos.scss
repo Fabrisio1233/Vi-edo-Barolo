@@ -9,6 +9,14 @@ $color-carrito: #9b2428;
     background-color: $color-secundario;
     height: 3vh;
 }
+.LogoPrincipal{
+    height: 13vh;
+    width: 18vh;
+}
+.LogoPrincipalCelular{
+    height: 10vh;
+    width: 12vh;
+}
 .ColumnaDivisor{ 
     background-color: #a5303e;
     height: 65vh; 
@@ -23,7 +31,19 @@ $color-carrito: #9b2428;
     background-color: $color-secundario;
     color: $color-letras;
     height: 7vh;
-    width: 18vh;
+    width: 17vh;
+    border-radius: 0.7vh;
+    text-decoration: none;
+    font-family: Georgia;
+    &:hover{
+        background-color: #c43d4d;
+    }
+}
+.btn-PrincipalLogo{
+    background-color: $color-secundario;
+    color: $color-letras;
+    height: 5vh;
+    width: 10vh;
     border-radius: 0.7vh;
     text-decoration: none;
     font-family: Georgia;
@@ -69,7 +89,7 @@ $color-carrito: #9b2428;
 }
 .CarruselCelular{
     height: 20vh;
-    width: 60vh;
+    width: 55vh;
 }
 .ImagenFinal{
     height: 18vh;
@@ -114,6 +134,12 @@ $color-carrito: #9b2428;
     height: 25vh; 
     border-radius: 5vh; 
 }
+.ProductoCarritoCelular{
+    background-color: $color-secundario;
+    width: 40vh; 
+    height: 25vh; 
+    border-radius: 5vh; 
+}
 .ImagenCarrito{
     width: 15vh;
     height: 20vh;
@@ -124,6 +150,16 @@ $color-carrito: #9b2428;
    width: 45vh; 
    height: 3.5vh; 
    border-radius: 2vh;
+}
+.NombreCarritoCelular{
+   background-color: $color-carrito;
+   color: $color-letras;
+   text-decoration: none;
+   font-family: Georgia;
+   width: 20vh; 
+   height: 3.5vh; 
+   border-radius: 2vh;
+   font-size: 2vh;
 }
 .PrecioCarrito{
     background-color: $color-carrito;
@@ -156,7 +192,7 @@ $color-carrito: #9b2428;
     background-color: $color-carrito;
     color: $color-letras;
     height: 5.5vh;
-    width: 30vh;
+    width: 27vh;
     &:hover{
         background-color: rgb(156, 38, 42);
     }
@@ -243,4 +279,16 @@ $color-carrito: #9b2428;
 .ImgNuestroViñedo{
     height: 35vh;
     width: 20vh;
+}
+.TituloCelular{
+    color: $color-letras;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 3vh;
+}
+.DescripcionCelular{
+    color: $color-letras;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 1.6vh;
 }

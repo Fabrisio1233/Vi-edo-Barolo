@@ -11,8 +11,11 @@
 <div class="container-fluid">
   <!--Encabezado-->
  <div class="row text-center d-flex align-items-center justify-content-center Encabezado">
-  <div class="col-3">
-    <a href="index.html" class="btn-Principal"><img src="Imagenes/Logo.png" alt="Logo" class="img-fluid w-50"></a>
+ <div class="col-3 text-center d-flex align-items-center justify-content-center">
+    <a href="index.html" class="btn btn-PrincipalLogo text-center d-flex align-items-center justify-content-center">
+      <img src="Imagenes/Logo.png" alt="Logo" class="LogoPrincipal d-none d-md-flex">
+      <img src="Imagenes/Logo.png" alt="Logo" class="LogoPrincipalCelular d-md-none">
+    </a>
   </div>
   <div class="col-5 text-center d-flex align-items-center justify-content-center">
     <a href="Nuestro Vinedo.html" class="btn btn-Principal d-flex align-items-center justify-content-center mx-2">Nuestro Viñedo</a>
@@ -109,7 +112,8 @@
     <div class="ColumnaDivisor"></div>
   </div>
   <div class="col-8 d-flex flex-column align-items-center justify-content-center gap-2">
-    <div class="p-3 d-flex align-items-start justify-content-start gap-2 ProductoCarrito">
+    <!--Producto Carrito Pc-->
+    <div class="p-3 d-none d-md-flex align-items-start justify-content-start gap-2 ProductoCarrito">
         <img src="Imagenes/Logo.png" alt="Producto" class="ImagenCarrito">
         <div class="d-flex flex-column gap-2">
         <div class="NombreCarrito text-center">Nombre del Producto</div>
@@ -118,11 +122,21 @@
        <div id="alerta" class="AlertaCarrito">Eliminado del carrito</div>
       </div>
     </div>
-   <div class="p-3 d-flex align-items-start justify-content-start gap-2 ProductoCarrito">
+   <div class="p-3 d-none d-md-flex align-items-start justify-content-start gap-2 ProductoCarrito">
         <img src="Imagenes/Logo.png" alt="Producto" class="ImagenCarrito">
         <div class="d-flex flex-column gap-2">
         <div class="NombreCarrito text-center">Nombre del Producto</div>
         <div class="PrecioCarrito text-center">Precio</div>    
+       <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center btn-Carrito">Eliminar</button>
+       <div id="alerta" class="AlertaCarrito">Eliminado del carrito</div>
+      </div>
+    </div>
+    <!--Producto Carrito Celular-->
+    <div class="p-3 d-md-none d-flex align-items-start justify-content-start gap-2 ProductoCarritoCelular">
+        <img src="Imagenes/Logo.png" alt="Producto" class="ImagenCarrito">
+        <div class="d-flex flex-column gap-2">
+        <div class="NombreCarritoCelular text-center">Nombre del Producto</div>
+        <div class="NombreCarritoCelular text-center">Precio</div>    
        <button onclick="mostrarMensaje()" class="btn text-center d-flex align-items-center justify-content-center btn-Carrito">Eliminar</button>
        <div id="alerta" class="AlertaCarrito">Eliminado del carrito</div>
       </div>
@@ -134,13 +148,11 @@
   </div>
 
  <!--Divisor-->
-   <div class="row Divisor">
+ <div class="row Divisor">
   </div>
+ </div>
+</div>
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
         function mostrarMensaje() {
         const alerta = document.getElementById("alerta");
